@@ -1,4 +1,5 @@
 import {Box, Container } from '@chakra-ui/react'
+import Navbar from '../navbar.js'
 import Head from 'next/head'
 
 const Main = ({ children, router }) => {
@@ -12,6 +13,8 @@ const Main = ({ children, router }) => {
                 <title> Lonk - Homepage</title>
             </Head>
 
+
+            <Navbar path={router.asPath} />
             <Container maxW="container.md" pt={14}>
                 {children}
             </Container>

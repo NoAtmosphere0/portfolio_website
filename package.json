@@ -1,0 +1,37 @@
+{
+  "name": "Lonk-homepage",
+  "version": "1.0.0",
+  "description": "Long's website at https://noatmosphere0.github.io/portfolio_website/",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint" : "next lint"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoAtmosphere0/portfolio_website.git"
+  },
+  "keywords": [],
+  "author": "Đặng Hoàng Long<tylbam11@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NoAtmosphere0/portfolio_website/issues"
+  },
+  "homepage": "https://github.com/NoAtmosphere0/portfolio_website#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^2.4.1",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.6.12",
+    "next": "^13.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-next": "^13.0.5",
+    "prettier": "^2.8.0"
+  }
+}

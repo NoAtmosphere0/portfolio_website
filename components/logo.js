@@ -24,7 +24,8 @@ const Logo = () => {
                         ml={3} 
                         color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                         fontFamily = 'M PLUS Rounded 1c'
-                        fontWeight='bold'>
+                        fontWeight='bold'
+                    >
                         Đặng Hoàng Long
                     </Text>
                 </LogoBox>

@@ -10,10 +10,13 @@ const LogoBox = styled.span`
     align-items: center;
     height: 30px;
     line-height: 20px;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    &:hover {
+        color: #2D3748;
+        box-shadow: 0 5px 15px #008080;
 
-    &:hover img {
-        transform: rotate(20deg);
     }
 `
 const Logo = () => {
@@ -21,10 +24,12 @@ const Logo = () => {
         <Link href="/">
                 <LogoBox>
                     <Text 
-                        ml={3} 
+                        ml={1} 
+                        mb={2}
                         color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                         fontFamily = 'M PLUS Rounded 1c'
                         fontWeight='bold'
+                        alignItems={'center'}
                     >
                         Đặng Hoàng Long
                     </Text>

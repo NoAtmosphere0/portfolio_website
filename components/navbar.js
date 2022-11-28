@@ -70,22 +70,23 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
                 >
+                    <LinkItem href="/about" path={path}>
+                        About
+                    </LinkItem>
                     <LinkItem href="/works" path={path}>
                         Works
                     </LinkItem>
-                    <LinkItem href="/posts" path={path}>
-                        Posts
-                    </LinkItem>
-                    <LinkItem href="">Uses</LinkItem>
                     <LinkItem
                         target="_blank"
-                        href=""
+                        href="https://github.com/NoAtmosphere0/portfolio_website"
                         path={path}
                         display="inline-flex"
                         alignItems="center"
                         style={{ gap: 4 }}
                         pl={2}
-                    ></LinkItem>
+                    >
+                        Source Code
+                    </LinkItem>
                 </Stack>
 
                 <Box flex={1} align="right">
@@ -100,24 +101,18 @@ const Navbar = props => {
                                 aria-label="Options"
                             />
                             <MenuList>
-                                <NextLink href="/" passHref>
+                                <NextLink href="/about" passHref>
                                     <MenuItem as={Link}>About</MenuItem>
                                 </NextLink>
                                 <NextLink href="/works" passHref>
                                     <MenuItem as={Link}>Works</MenuItem>
                                 </NextLink>
-                                <NextLink href="/posts" passHref>
-                                    <MenuItem as={Link}>Posts</MenuItem>
-                                </NextLink>
                                 <NextLink
-                                    href=""
+                                    href="https://github.com/NoAtmosphere0/portfolio_website"
                                     passHref
                                 >
-                                    <MenuItem as={Link}>Uses</MenuItem>
+                                    <MenuItem as={Link}>Source Code</MenuItem>
                                 </NextLink>
-                                <MenuItem as={Link} href="">
-                                    View Source
-                                </MenuItem>
                             </MenuList>
                         </Menu>
                     </Box>

@@ -5,5 +5,5 @@ This is the repository for my portfolio website
 The site is built using Next.js, Chakra UI, Framer Motion and Three.js
 
 # Inspiration
-Deeply inspired by: devaslife on YouTube
-Link to his homepage: https://www.craftz.dog/
+Deeply inspired by: [devaslife](https://www.youtube.com/@devaslife) on YouTube\
+Link to his [homepage](https://www.craftz.dog/)

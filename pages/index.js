@@ -28,7 +28,7 @@ const Page = () => {
                 mt={5}
                 align="center"
             >
-                Hi, I'm a sophomore from the University of Science, VNU-HCM.{' '}
+                Hi, I&apos;m a sophomore from the University of Science, VNU-HCM.{' '}
                 <br></br>I major in Information Technology.
             </Box>
             <Box display={{ md: 'flex' }}>

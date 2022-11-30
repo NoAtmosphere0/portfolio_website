@@ -6,15 +6,13 @@ import {
     Divider,
     Button,
     Text,
-    ControlBox
 } from '@chakra-ui/react'
-import { NoFallbackError } from 'next/dist/server/base-server'
 
 const NotFound = () => {
     return (
         <Container>
             <Heading as="h1">Not found...</Heading>
-            <Text>There's nothing here, yet...</Text>
+            <Text>There&apos; nothing here, yet...</Text>
             <Divider my={6} />
             <Box my={6} align="center">
                 <NextLink href="/" passHref>

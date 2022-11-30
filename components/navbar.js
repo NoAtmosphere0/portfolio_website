@@ -12,11 +12,13 @@ import {
     MenuList,
     MenuButton,
     IconButton,
+    Icon,
     useColorModeValue
 } from '@chakra-ui/react'
 
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button.js'
+import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, children, ...props }) => {
     const active = path === href
@@ -84,7 +86,9 @@ const Navbar = props => {
                         alignItems="center"
                         style={{ gap: 4 }}
                         pl={2}
-                    >Source Code</LinkItem>
+                    >
+                        Source Code
+                    </LinkItem>
                 </Stack>
 
                 <Box flex={1} align="right">

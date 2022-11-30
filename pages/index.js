@@ -6,12 +6,16 @@ import {
     Image,
     Button,
     Link,
+    List, 
+    ListItem,
+    Icon,
     useColorModeValue
 } from '@chakra-ui/react'
 import Section from '../components/section.js'
 import Paragraph from '../components/paragraph.js'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio.js'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const Page = () => {
     return (
@@ -24,8 +28,8 @@ const Page = () => {
                 mt={5}
                 align="center"
             >
-                Hi, I'm a sophomore from the University of Science, VNU-HCM. <br></br>
-                I major in Information Technology.
+                Hi, I'm a sophomore from the University of Science, VNU-HCM.{' '}
+                <br></br>I major in Information Technology.
             </Box>
             <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}>
@@ -90,14 +94,28 @@ const Page = () => {
                     Hobbies
                 </Heading>
                 <Paragraph>Insert hobbies here</Paragraph>
+            </Section>
 
-
+            <Section delay={0.3}>
                 <Heading as="h3" variant="section-title" align="left">
                     Find me at
                 </Heading>
-                <Paragraph>
-                    Insert some social media info
-                </Paragraph>
+                <List>
+                    <ListItem align = "left">
+                        <Link href="https://github.com/NoAtmosphere0" target="_blank">
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>}>
+                                @NoAtmosphere0
+                            </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem align = "left">
+                        <Link href="https://www.linkedin.com/in/long-dang1109/" target="_blank">
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoLinkedin}/>}>
+                                @long-dang1109
+                            </Button>
+                        </Link>
+                    </ListItem>
+                </List>
             </Section>
         </Container>
     )

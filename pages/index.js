@@ -16,7 +16,7 @@ import Paragraph from '../components/paragraph.js'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio.js'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import { SiKaggle } from 'react-icons/si'
+import { FaKaggle } from 'react-icons/fa'
 
 const Page = () => {
     return (
@@ -131,7 +131,7 @@ const Page = () => {
                     {/* Kaggle info */}
                     <ListItem align = "left">
                         <Link href="https://www.kaggle.com/dhlongg" target="_blank">
-                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={SiKaggle}/>}>
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={FaKaggle}/>}>
                                 @Đặng Hoàng Long
                             </Button>
                         </Link>

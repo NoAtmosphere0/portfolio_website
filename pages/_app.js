@@ -2,6 +2,18 @@ import { ChakraProvider } from "@chakra-ui/react"
 import Layout from "../components/layouts/main.js"
 import Fonts from "../components/fonts.js"
 import theme from '../lib/theme.js'
+import { Analytics } from '@vercel/analytics/react';
+ 
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Component {...pageProps} />
+      <Analytics />
+    </>
+  );
+}
+ 
+
 const Website = ({ Component, pageProps, router }) => {
     return (
         <ChakraProvider theme={theme}>
@@ -13,4 +25,5 @@ const Website = ({ Component, pageProps, router }) => {
     )
 }
 
-export default Website
+export default Website; 
+export { MyApp };

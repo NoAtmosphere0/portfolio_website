@@ -25,5 +25,5 @@ const Website = ({ Component, pageProps, router }) => {
     )
 }
 
-export default Website; 
-export { MyApp };
+export {Website}; 
+export default MyApp;

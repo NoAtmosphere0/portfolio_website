@@ -1,4 +1,4 @@
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider, DefaultIcon } from "@chakra-ui/react"
 import Layout from "../components/layouts/main.js"
 import Fonts from "../components/fonts.js"
 import theme from '../lib/theme.js'
@@ -25,5 +25,5 @@ const Website = ({ Component, pageProps, router }) => {
     )
 }
 
-export {Website}; 
-export default MyApp;
+export default Website; 
+export {MyApp};

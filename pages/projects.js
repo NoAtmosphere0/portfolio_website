@@ -1,4 +1,8 @@
 import image_processing from './image_processing.html';
 
-document.write(image_processing);
+export default function ImageProcessing() {
+    return (
+        <div dangerouslySetInnerHTML={{ __html: image_processing }} />
+    );
+    }
 

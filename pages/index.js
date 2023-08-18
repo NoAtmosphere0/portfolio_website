@@ -83,12 +83,8 @@ const Page = () => {
                     Bio
                 </Heading>
                 <BioSection align="left">
-                    <BioYear>2003</BioYear>
-                    Born in Ho Chi Minh City, Vietnam
-                </BioSection>
-                <BioSection align="left">
                     <BioYear>2018</BioYear>
-                    High School for the Gifted, VNU-HCM (English specialization)
+                    High School for the Gifted, VNU-HCM (English class)
                 </BioSection>
                 <BioSection align="left" padding-right="4em">
                     <BioYear>2021 to present</BioYear>
@@ -99,7 +95,7 @@ const Page = () => {
                 <Heading as="h3" variant="section-title" align="left">
                     Hobbies
                 </Heading>
-                <Paragraph>Insert hobbies here</Paragraph>
+                <Paragraph>I like to read about the newest technologies in Machine Learning. Sometimes I even search around for cool datasets and I will try to analyze it.</Paragraph>
             </Section>
 
             <Section delay={0.3}>

@@ -3,6 +3,7 @@ import Layout from "../components/layouts/main.js"
 import Fonts from "../components/fonts.js"
 import theme from '../lib/theme.js'
 import { Analytics } from '@vercel/analytics/react';
+import Head from 'next/head';
  
 function MyApp({ Component, pageProps }) {
   return (

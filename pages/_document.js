@@ -9,6 +9,7 @@ export default class Document extends NextDocument {
                 <Head>
                 <link rel="shortcut icon" href="/kirby.ico" />
                 </Head>
+                {/* Link to the Kirby favicon: http://www.rw-designer.com/icon-detail/20398 */}
                 <body>
                     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
                     <Main />

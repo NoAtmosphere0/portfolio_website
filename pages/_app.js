@@ -7,6 +7,9 @@ import { Analytics } from '@vercel/analytics/react';
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <link rel="shortcut icon" href="/kirby.ico" />
+      </Head>
       <Component {...pageProps} />
       <Analytics />
     </>

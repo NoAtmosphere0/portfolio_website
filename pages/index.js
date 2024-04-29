@@ -29,7 +29,7 @@ const Page = () => {
                 mt={5}
                 align="center"
             >
-                Hi, I&apos;m a junior from the University of Science, VNU-HCM.{' '}
+                Hi, I&apos;m a junior and a Master &apos;s candidate from the University of Science, VNU-HCM.{' '}
                 <br></br>I major in Information Technology.
             </Box>
             <Box display={{ md: 'flex' }}>
@@ -37,7 +37,7 @@ const Page = () => {
                     <Heading as="h2" variant="page-title">
                         Đặng Hoàng Long
                     </Heading>
-                    <p>Developer/Competitive Coding enthusiast</p>
+                    <p>IT Undergraduate | MSc AI Candidate | Enthusiastic ML Engineer</p>
                 </Box>
                 <Box
                     flexShrink={0}
@@ -64,7 +64,13 @@ const Page = () => {
                 </Heading>
 
                 {/* About me content */}
-                <Paragraph>I am a highly motivated and enthusiastic sophomore with a passion for data science and machine learning. With a strong foundation in mathematics and programming, I am eager to further my knowledge and skills in this rapidly growing field. My experience with Python and hands-on projects have given me the ability to effectively pre-process and visualize data, and implement machine learning algorithms. I am also actively involved in online communities and competitions, such as Kaggle, to stay up-to-date with industry trends and collaborate with like-minded individuals. I am eager to pursue internships and real-world projects to gain hands-on experience and make a meaningful impact in the field of data science and machine learning.</Paragraph>
+                <Paragraph>I am a highly motivated and enthusiastic junior with a passion for machine learning and deep learning. 
+                    With a strong foundation in mathematics and programming, I am eager to further my knowledge and skills in this rapidly growing field. 
+                    My experience with Python and hands-on projects have given me the ability to effectively pre-process and visualize data, and implement machine learning algorithms. 
+                    I am also actively involved in online communities and competitions, such as Kaggle, to stay up-to-date with industry trends and collaborate with like-minded individuals. 
+                    I am eager to pursue jobs and real-world projects to gain hands-on experience and make a meaningful impact in the field of machine learning and deep learning.
+
+                </Paragraph>
 
                 <Box align="center" my={4}>
                     <NextLink href="https://www.linkedin.com/in/long-dang1109/">

@@ -83,6 +83,19 @@ const Page = () => {
                     </NextLink>
                 </Box>
             </Section>
+
+            <Section delay={0.2}>
+                {/* Research intereset section */}
+                <Heading as="h3" variant="section-title" align="left">
+                    Research Interests
+                </Heading>
+                <Paragraph>
+                    <BioYear>Algorithm Optimization</BioYear>
+                    <BioYear>Deep Learning</BioYear>
+                    <BioYear>Natural Language Processing</BioYear>
+                </Paragraph>
+            </Section>
+            
             <Section delay={0.2}>
                 {/* Bio section */}
                 <Heading as="h3" variant="section-title" align="left">
@@ -95,6 +108,10 @@ const Page = () => {
                 <BioSection align="left" padding-right="4em">
                     <BioYear>2021 to present</BioYear>
                     University of Science, VNU-HCM
+                </BioSection>
+                <BioSection align="left" padding-right="4em">
+                    <BioYear>2024 to present</BioYear>
+                    MSc in Artificial Intelligence, University of Science, VNU-HCM
                 </BioSection>
 
                 {/* Hobbies section */}

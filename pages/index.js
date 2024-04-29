@@ -90,12 +90,20 @@ const Page = () => {
                     Research Interests
                 </Heading>
                 <Paragraph>
-                    <BioYear>Algorithm Optimization</BioYear>
-                    <BioYear>Deep Learning</BioYear>
-                    <BioYear>Natural Language Processing</BioYear>
+                    <BioSection>
+                        <BioYear align="left" padding-right="4em">Algorithm Optimization</BioYear>
+                    </BioSection>
+                    <BioSection>
+                        <BioYear align="left" padding-right="4em">Deep Learning</BioYear>
+                    </BioSection>
+                    <BioSection>
+                        <BioYear align="left" padding-right="4em">Natural Language Processing</BioYear>
+                    </BioSection>
+                    {/* <BioYear align="left" padding-right="4em">Deep Learning</BioYear>
+                    <BioYear align="left" padding-right="4em">Natural Language Processing</BioYear> */}
                 </Paragraph>
             </Section>
-            
+
             <Section delay={0.2}>
                 {/* Bio section */}
                 <Heading as="h3" variant="section-title" align="left">

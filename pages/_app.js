@@ -24,6 +24,7 @@ const Website = ({ Component, pageProps, router }) => {
             <Fonts />
             <Layout router={router}>
                 <Component {...pageProps} key = {router.route} />
+                <Analytics />
             </Layout>
         </ChakraProvider>
     )

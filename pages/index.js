@@ -117,7 +117,7 @@ const Page = () => {
                     <BioYear>2021 to present</BioYear>
                     University of Science, VNU-HCM
                 </BioSection>
-                <BioSection align="left" padding-right="4em">
+                <BioSection align="left">
                     <BioYear>2024 to present</BioYear>
                     MSc in Artificial Intelligence, University of Science, VNU-HCM
                 </BioSection>

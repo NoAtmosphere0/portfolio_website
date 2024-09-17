@@ -64,12 +64,12 @@ const Page = () => {
                 </Heading>
 
                 {/* About me content */}
-                <Paragraph>Hi, I'm Long, a passionate and driven Master's student in Computer Science specializing in the exciting realms of Deep Learning and Natural Language Processing. 
-                    Currently, I'm deeply engrossed in building intelligent systems that can understand and generate human-like text, with a particular focus on LLM-powered applications. 
-                    My journey has equipped me with a strong command of Python, machine learning libraries like PyTorch and Scikit-learn, and a knack for turning complex data into actionable insights. 
-                    I thrive in collaborative environments where innovation takes center stage and am always eager to embrace new challenges in the ever-evolving world of AI. 
-                    Beyond the algorithms, you'll often find me sharing my knowledge through mentorship, volunteering at hackathons, and contributing to open-source projects. 
-                    Let's connect and explore the fascinating possibilities of AI together!
+                <Paragraph>Hi, I&apos;m Long, a passionate and driven Master&apos;s student in Computer Science specializing in the exciting realms of Deep Learning and Natural Language Processing. 
+                Currently, I&apos;m deeply engrossed in building intelligent systems that can understand and generate human-like text, with a particular focus on LLM-powered applications. 
+                My journey has equipped me with a strong command of Python, machine learning libraries like PyTorch and Scikit-learn, and a knack for turning complex data into actionable insights. 
+                I thrive in collaborative environments where innovation takes center stage and am always eager to embrace new challenges in the ever-evolving world of AI. 
+                Beyond the algorithms, you&apos;ll often find me sharing my knowledge through mentorship, volunteering at hackathons, and contributing to open-source projects. 
+                Let&apos;s connect and explore the fascinating possibilities of AI together!
                 </Paragraph>
 
                 <Box align="center" my={4}>

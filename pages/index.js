@@ -29,15 +29,15 @@ const Page = () => {
                 mt={5}
                 align="center"
             >
-                Hi, I&apos;m a junior and a Master &apos;s candidate from the University of Science, VNU-HCM.{' '}
-                <br></br>I major in Information Technology.
+                Hi, I&apos;m a senior and a Master &apos;s candidate from the University of Science, VNU-HCM.{' '}
+                <br></br>I major in Information Technology. But I mostly work with LLMs.
             </Box>
             <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
                         Đặng Hoàng Long
                     </Heading>
-                    <p>IT Undergraduate | MSc AI Candidate | Enthusiastic ML Engineer</p>
+                    <p>IT Undergraduate | M.Sc. Computer Science Candidate | Enthusiastic AI Engineer</p>
                 </Box>
                 <Box
                     flexShrink={0}
@@ -64,12 +64,12 @@ const Page = () => {
                 </Heading>
 
                 {/* About me content */}
-                <Paragraph>I am a highly motivated and enthusiastic junior with a passion for machine learning and deep learning. 
-                    With a strong foundation in mathematics and programming, I am eager to further my knowledge and skills in this rapidly growing field. 
-                    My experience with Python and hands-on projects have given me the ability to effectively pre-process and visualize data, and implement machine learning algorithms. 
-                    I am also actively involved in online communities and competitions, such as Kaggle, to stay up-to-date with industry trends and collaborate with like-minded individuals. 
-                    I am eager to pursue jobs and real-world projects to gain hands-on experience and make a meaningful impact in the field of machine learning and deep learning.
-
+                <Paragraph>Hi, I'm Long, a passionate and driven Master's student in Computer Science specializing in the exciting realms of Deep Learning and Natural Language Processing. 
+                    Currently, I'm deeply engrossed in building intelligent systems that can understand and generate human-like text, with a particular focus on LLM-powered applications. 
+                    My journey has equipped me with a strong command of Python, machine learning libraries like PyTorch and Scikit-learn, and a knack for turning complex data into actionable insights. 
+                    I thrive in collaborative environments where innovation takes center stage and am always eager to embrace new challenges in the ever-evolving world of AI. 
+                    Beyond the algorithms, you'll often find me sharing my knowledge through mentorship, volunteering at hackathons, and contributing to open-source projects. 
+                    Let's connect and explore the fascinating possibilities of AI together!
                 </Paragraph>
 
                 <Box align="center" my={4}>
@@ -78,10 +78,33 @@ const Page = () => {
                             colorScheme="teal"
                             rightIcon={<ChevronRightIcon />}
                         >
-                            My portfolio
+                            My&nbsp;<IoLogoLinkedin/>&nbsp;Profile
                         </Button>
                     </NextLink>
                 </Box>
+            </Section>
+
+            <Section delay={0.2}>
+                {/* Experience */}
+                <Heading as="h3" variant="section-title" align="left">
+                    Experience
+                </Heading>
+                <Paragraph>
+                <BioSection align="left">
+                    <BioYear>AI Engineer Intern @ AI Bid</BioYear>
+                    June 2024 - September 2024
+                    <br></br>
+                        <li>Used OCR to extract text from a PDF file.</li>
+                        <li>Practice text preprocessing techniques such as semantic chunking, sentence splitting.</li>
+                        <li>Embed the split documents using an embedding model and store them in MongoDB Atlas database.</li>
+                        <li>Used Ollama along with its APIs to speed-up inference.</li>
+                        <li>Wrote RESTful APIs to connect the model backend with the frontend.</li>
+
+
+                    
+                </BioSection>
+                
+                </Paragraph>
             </Section>
 
             <Section delay={0.2}>
@@ -91,7 +114,7 @@ const Page = () => {
                 </Heading>
                 <Paragraph>
                     <BioSection>
-                        <BioYear align="left" padding-right="4em">Algorithm Optimization</BioYear>
+                        <BioYear align="left" padding-right="4em">Efficient AI</BioYear>
                     </BioSection>
                     <BioSection>
                         <BioYear align="left" padding-right="4em">Deep Learning</BioYear>
@@ -119,14 +142,14 @@ const Page = () => {
                 </BioSection>
                 <BioSection align="left">
                     <BioYear>2024 to present</BioYear>
-                    MSc in Artificial Intelligence, University of Science, VNU-HCM
+                    M.Sc. in Computer Science, University of Science, VNU-HCM
                 </BioSection>
 
-                {/* Hobbies section */}
+                {/* Hobbies section
                 <Heading as="h3" variant="section-title" align="left">
                     Hobbies
                 </Heading>
-                <Paragraph>I like to read about the newest technologies in Machine Learning. Sometimes I even search around for cool datasets and I will try to analyze it.</Paragraph>
+                <Paragraph>I am passi.</Paragraph> */}
             </Section>
 
             <Section delay={0.3}>

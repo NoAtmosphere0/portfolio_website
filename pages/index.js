@@ -6,7 +6,7 @@ import {
     Image,
     Button,
     Link,
-    List, 
+    List,
     ListItem,
     Icon,
     useColorModeValue
@@ -64,21 +64,22 @@ const Page = () => {
                 </Heading>
 
                 {/* About me content */}
-                <Paragraph>Hi, I&apos;m Long, a passionate and driven Master&apos;s student in Computer Science specializing in the exciting realms of Deep Learning and Natural Language Processing. 
-                Currently, I&apos;m deeply engrossed in building intelligent systems that can understand and generate human-like text, with a particular focus on LLM-powered applications. 
-                My journey has equipped me with a strong command of Python, machine learning libraries like PyTorch and Scikit-learn, and a knack for turning complex data into actionable insights. 
-                I thrive in collaborative environments where innovation takes center stage and am always eager to embrace new challenges in the ever-evolving world of AI. 
-                Beyond the algorithms, you&apos;ll often find me sharing my knowledge through mentorship, volunteering at hackathons, and contributing to open-source projects. 
-                Let&apos;s connect and explore the fascinating possibilities of AI together!
+                <Paragraph>Hi, I&apos;m Long, a passionate and driven Master&apos;s student in Computer Science specializing in the exciting realms of Deep Learning and Natural Language Processing.
+                    Currently, I&apos;m deeply engrossed in building intelligent systems that can understand and generate human-like text, with a particular focus on LLM-powered applications.
+                    My journey has equipped me with a strong command of Python, machine learning libraries like PyTorch and Scikit-learn, and a knack for turning complex data into actionable insights.
+                    I thrive in collaborative environments where innovation takes center stage and am always eager to embrace new challenges in the ever-evolving world of AI.
+                    Beyond the algorithms, you&apos;ll often find me sharing my knowledge through mentorship, volunteering at hackathons, and contributing to open-source projects.
+                    Let&apos;s connect and explore the fascinating possibilities of AI together!
                 </Paragraph>
 
                 <Box align="center" my={4}>
-                    <NextLink href="https://www.linkedin.com/in/long-dang1109/">
+                    <NextLink href="https://www.linkedin.com/in/long-dang1109/" legacyBehavior>
                         <Button
+                            as="a"
                             colorScheme="teal"
                             rightIcon={<ChevronRightIcon />}
                         >
-                            My&nbsp;<IoLogoLinkedin/>&nbsp;Profile
+                            My&nbsp;<IoLogoLinkedin />&nbsp;Profile
                         </Button>
                     </NextLink>
                 </Box>
@@ -90,10 +91,10 @@ const Page = () => {
                     Experience
                 </Heading>
                 <Paragraph>
-                <BioSection align="left">
-                    <BioYear>AI Engineer Intern @ AI Bid</BioYear>
-                    June 2024 - September 2024
-                    <br></br>
+                    <BioSection align="left">
+                        <BioYear>AI Engineer Intern @ AI Bid</BioYear>
+                        June 2024 - September 2024
+                        <br></br>
                         <li>Used OCR to extract text from a PDF file.</li>
                         <li>Practice text preprocessing techniques such as semantic chunking, sentence splitting.</li>
                         <li>Embed the split documents using an embedding model and store them in MongoDB Atlas database.</li>
@@ -101,9 +102,9 @@ const Page = () => {
                         <li>Wrote RESTful APIs to connect the model backend with the frontend.</li>
 
 
-                    
-                </BioSection>
-                
+
+                    </BioSection>
+
                 </Paragraph>
             </Section>
 
@@ -161,27 +162,27 @@ const Page = () => {
                 <List>
 
                     {/* GitHub info */}
-                    <ListItem align = "left">
+                    <ListItem align="left">
                         <Link href="https://github.com/NoAtmosphere0" target="_blank">
-                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>}>
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub} />}>
                                 @NoAtmosphere0
                             </Button>
                         </Link>
                     </ListItem>
 
                     {/* LinkedIn info */}
-                    <ListItem align = "left">
+                    <ListItem align="left">
                         <Link href="https://www.linkedin.com/in/long-dang1109/" target="_blank">
-                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoLinkedin}/>}>
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoLinkedin} />}>
                                 @long-dang1109
                             </Button>
                         </Link>
                     </ListItem>
 
                     {/* Kaggle info */}
-                    <ListItem align = "left">
+                    <ListItem align="left">
                         <Link href="https://www.kaggle.com/dhlongg" target="_blank">
-                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={FaKaggle}/>}>
+                            <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={FaKaggle} />}>
                                 @Đặng Hoàng Long
                             </Button>
                         </Link>

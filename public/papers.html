@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papers - Kindle Reader</title>
+    <style>
+        /* Kindle Paperwhite optimized styles - minimal, high contrast, no animations */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #000;
+            background: #fff;
+            padding: 1em;
+            max-width: 100%;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #000;
+            padding-bottom: 0.3em;
+        }
+        h2 {
+            font-size: 1.2em;
+            margin: 1em 0 0.5em 0;
+        }
+        h3 {
+            font-size: 1.1em;
+            margin: 0.8em 0 0.4em 0;
+        }
+        p {
+            margin-bottom: 0.8em;
+            text-align: justify;
+        }
+        .paper {
+            border: 1px solid #000;
+            padding: 1em;
+            margin-bottom: 1.5em;
+        }
+        .paper-title {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .paper-authors {
+            font-style: italic;
+            margin: 0.3em 0;
+        }
+        .paper-meta {
+            font-size: 0.9em;
+            color: #333;
+            margin-bottom: 0.5em;
+        }
+        .section {
+            margin-top: 1em;
+        }
+        ul {
+            margin-left: 1.5em;
+            margin-bottom: 0.8em;
+        }
+        li {
+            margin-bottom: 0.3em;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #666;
+            margin: 1em 0;
+        }
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+        .equation {
+            font-family: "Courier New", monospace;
+            background: #f5f5f5;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Papers</h1>
+<p>Lightweight paper summaries for Kindle reading.</p>
+
+<hr>
+
+<article class="paper">
+    <h2 class="paper-title">Fast Inference from Transformers via Speculative Decoding</h2>
+    <p class="paper-authors">Yaniv Leviathan, Matan Kalman, Yossi Matias</p>
+    <p class="paper-meta">Google Research, 2022 | arXiv:2211.17192</p>
+    
+    <div class="section">
+        <h3>Abstract</h3>
+        <p>Inference from large autoregressive models like Transformers is slow - decoding K tokens takes K serial runs of the model. This work introduces speculative decoding, an algorithm to sample from autoregressive models faster without any changes to the outputs, by computing several tokens in parallel.</p>
+    </div>
+
+    <div class="section">
+        <h3>Key Insight</h3>
+        <p>The core observations are:</p>
+        <ul>
+            <li>Hard language-modeling tasks often include easier subtasks that can be approximated well by more efficient models</li>
+            <li>Using speculative execution and a novel sampling method, exact decoding from large models can be made faster by running them in parallel on outputs of approximation models</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>How It Works</h3>
+        <p><strong>Step 1: Draft Generation</strong><br>
+        A smaller, faster "draft" model generates K candidate tokens autoregressively. This is cheap because the draft model is much smaller.</p>
+        
+        <p><strong>Step 2: Parallel Verification</strong><br>
+        The large "target" model processes all K draft tokens in a single forward pass (in parallel), computing the probability distribution at each position.</p>
+        
+        <p><strong>Step 3: Acceptance/Rejection</strong><br>
+        For each draft token, compare the draft model's probability with the target model's probability:</p>
+        <ul>
+            <li>If target probability >= draft probability: Accept the token</li>
+            <li>Otherwise: Accept with probability (target_prob / draft_prob), reject otherwise</li>
+        </ul>
+        
+        <p><strong>Step 4: Recovery</strong><br>
+        When a token is rejected, sample a new token from an adjusted distribution. This ensures the final output distribution is identical to sampling directly from the target model.</p>
+    </div>
+
+    <div class="section">
+        <h3>Mathematical Guarantee</h3>
+        <p>The key theorem proves that speculative decoding produces samples from the exact same distribution as standard autoregressive sampling from the target model. The acceptance probability is designed so that:</p>
+        <span class="equation">P(accept) = min(1, p_target(x) / p_draft(x))</span>
+        <p>When rejection occurs, the residual distribution is sampled to maintain correctness.</p>
+    </div>
+
+    <div class="section">
+        <h3>Results</h3>
+        <ul>
+            <li>2X-3X acceleration on T5-XXL compared to standard T5X implementation</li>
+            <li>Identical outputs to the original model (not an approximation)</li>
+            <li>No retraining or architecture changes required</li>
+            <li>Works with existing off-the-shelf models</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Why It Matters</h3>
+        <p>Speculative decoding addresses the fundamental bottleneck of autoregressive generation: memory bandwidth. Large models are often memory-bound, not compute-bound. By generating multiple tokens per forward pass of the large model, speculative decoding better utilizes available compute while maintaining exact correctness.</p>
+    </div>
+
+    <div class="section">
+        <h3>Practical Considerations</h3>
+        <ul>
+            <li><strong>Draft Model Selection:</strong> The draft model should be fast while having reasonable agreement with the target model</li>
+            <li><strong>Speculation Length (K):</strong> More speculation = more potential speedup, but also more wasted computation on rejection</li>
+            <li><strong>Best for:</strong> Tasks where draft model can predict target model well (e.g., code completion, structured outputs)</li>
+        </ul>
+    </div>
+</article>
+
+<hr>
+
+<p><em>Last updated: December 2024</em></p>
+
+</body>
+</html>
